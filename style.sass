@@ -1,6 +1,16 @@
-body, html
+$primary: #b75fff48
+$secondary: #fefefe
+$text-dark: #333
+$text-light: #fff
+$accent: #8232d5
+$button: #b75fff48
+$font: 'Fredoka', sans-serif
+  
+*
+  box-sizing: border-box
   margin: 0
   padding: 0
+  font-family: $font
 
 body
   background-image: url('pics/taustapilt.svg')
@@ -8,4 +18,81 @@ body
   background-position: center
   background-attachment: fixed // konstantne taustapilt
   background-repeat: no-repeat
+  color: $text-dark
+  line-height: 1.6
 
+.container
+  background: #ffffff
+  max-width: 1000px
+  margin: 0 auto
+  padding-left: 2rem
+  padding-right: 2rem
+
+header
+  text-align: center
+  //margin-bottom: 1rem
+
+.main-nav
+  background: $primary
+  border-radius: 0 0 50px 50px
+  ul
+    list-style: none
+    display: flex
+    justify-content: center
+    gap: 5rem
+    padding: 1.5rem 
+  a
+    color: $text-dark
+    font-weight: bold
+    text-decoration: none
+    font-size: 17px
+    &:hover
+      color: $text-light
+
+.main-content
+  padding: 2rem 0
+  h1
+    font-size: 2.5rem
+    color: $accent
+    margin-bottom: 0.5rem
+  > p:first-of-type
+    font-size: 1.3rem
+    font-weight: bold
+    margin-bottom: 2rem
+  .text-content
+    p
+      margin-bottom: 0.5rem
+
+button, .main-content a[href="#"]
+  display: inline-block
+  margin-top: 1rem
+  padding: 0.7rem 1.5rem
+  background: $button
+  color: $text-dark
+  border: none
+  border-radius: 10px
+  cursor: pointer
+  font-weight: bold
+  text-align: center
+  &:hover
+    background: darken($button, 20%)
+
+footer
+  background: $primary
+  margin-top: 3rem
+  padding: 1.5rem
+  border-radius: 50px 50px 0 0
+  color: $text-dark
+  .footer-nav
+    ul
+      display: flex
+      justify-content: space-around
+      list-style: none
+      padding: 0
+      a
+        color: $text-dark
+        font-weight: bold
+        text-decoration: none
+        font-size: 17px
+        &:hover
+          color: $text-light
