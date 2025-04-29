@@ -100,7 +100,7 @@ button:hover, .main-content a[href="#"]:hover {
 .contact-form form {
   display: flex;
   flex-direction: column;
-  background-color: #f1f1f1;
+  background-color: #efefef;
   padding: 2rem;
   border-radius: 10px;
   width: 100%;
