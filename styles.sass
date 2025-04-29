@@ -1,3 +1,4 @@
+// Põhivärvid, nupp ja font
 $primary: #b75fff48
 $secondary: #fefefe
 $text-dark: #333
@@ -16,17 +17,18 @@ body
   background-image: url('pics/taustapilt.svg')
   background-size: cover
   background-position: center
-  background-attachment: fixed // konstantne taustapilt
+  background-attachment: fixed // Konstantne taustapilt
   background-repeat: no-repeat
   color: $text-dark
   line-height: 1.6
 
 .container
   background: #ffffff
-  max-width: 1000px
+  max-width: 1200px
   margin: 0 auto
-  padding-left: 2rem
-  padding-right: 2rem
+  padding-left: 3rem
+  padding-right: 3rem
+  border-radius: 130px 130px 130px 130px
 
 header
   text-align: center
@@ -34,7 +36,11 @@ header
 
 .main-nav
   background: $primary
-  border-radius: 0 0 50px 50px
+  margin-left: -3rem  // Tühistab konteineri paddingu 
+  margin-right: -3rem
+  border-radius: 100px 100px 0 0
+  padding: 1.5rem 0
+
   ul
     list-style: none
     display: flex
@@ -45,9 +51,9 @@ header
     color: $text-dark
     font-weight: bold
     text-decoration: none
-    font-size: 17px
+    font-size: 20px
     &:hover
-      color: $text-light
+      color: $accent
 
 .main-content
   padding: 2rem 0

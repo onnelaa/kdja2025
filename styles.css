@@ -17,10 +17,11 @@ body {
 
 .container {
   background: #ffffff;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  border-radius: 130px 130px 130px 130px;
 }
 
 header {
@@ -29,7 +30,10 @@ header {
 
 .main-nav {
   background: rgba(183, 95, 255, 0.2823529412);
-  border-radius: 0 0 50px 50px;
+  margin-left: -3rem;
+  margin-right: -3rem;
+  border-radius: 100px 100px 0 0;
+  padding: 1.5rem 0;
 }
 .main-nav ul {
   list-style: none;
@@ -42,10 +46,10 @@ header {
   color: #333;
   font-weight: bold;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 20px;
 }
 .main-nav a:hover {
-  color: #fff;
+  color: #8232d5;
 }
 
 .main-content {
