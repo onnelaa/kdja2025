@@ -61,13 +61,17 @@ header
     font-size: 2.5rem
     color: $accent
     margin-bottom: 0.5rem
+  h2
+    text-align: center
+    font-size: 1.3rem
+    margin-top: 2rem
   > p:first-of-type
     font-size: 1.3rem
     font-weight: bold
     margin-bottom: 2rem
   .text-content
     p
-      margin-bottom: 0.5rem
+      margin-bottom: 0.2rem
 
 button, .main-content a[href="#"]
   display: inline-block
@@ -88,16 +92,16 @@ button, .main-content a[href="#"]
   display: flex
   justify-content: center
   align-items: center
-  min-height: 60vh
-  margin-top: 2rem
+  min-height: 50vh
+  margin-top: 1rem
 
   form
     display: flex
     flex-direction: column
-    background-color: #f5f5f5
+    background-color: #f1f1f1
     padding: 2rem
     border-radius: 10px
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
+    //box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
     width: 100%
     max-width: 400px
 
@@ -105,6 +109,12 @@ button, .main-content a[href="#"]
       padding: 0.5rem
       border: 1px solid #ccc
       border-radius: 10px
+      &:focus
+        background: lighten($button, 20%)
+
+
+    input[type="radio"]
+      margin-bottom: 0.5rem
 
     input[type="submit"]
       background-color: $button

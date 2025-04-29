@@ -60,13 +60,18 @@ header {
   color: #8232d5;
   margin-bottom: 0.5rem;
 }
+.main-content h2 {
+  text-align: center;
+  font-size: 1.3rem;
+  margin-top: 2rem;
+}
 .main-content > p:first-of-type {
   font-size: 1.3rem;
   font-weight: bold;
   margin-bottom: 2rem;
 }
 .main-content .text-content p {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.2rem;
 }
 
 button, .main-content a[href="#"] {
@@ -89,16 +94,15 @@ button:hover, .main-content a[href="#"]:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 60vh;
-  margin-top: 2rem;
+  min-height: 50vh;
+  margin-top: 1rem;
 }
 .contact-form form {
   display: flex;
   flex-direction: column;
-  background-color: #f5f5f5;
+  background-color: #f1f1f1;
   padding: 2rem;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 100%;
   max-width: 400px;
 }
@@ -106,6 +110,12 @@ button:hover, .main-content a[href="#"]:hover {
   padding: 0.5rem;
   border: 1px solid #ccc;
   border-radius: 10px;
+}
+.contact-form form input[type=text]:focus {
+  background: rgba(229, 197, 255, 0.2823529412);
+}
+.contact-form form input[type=radio] {
+  margin-bottom: 0.5rem;
 }
 .contact-form form input[type=submit] {
   background-color: rgba(183, 95, 255, 0.2823529412);
