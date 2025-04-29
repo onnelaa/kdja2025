@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | Fortune Diggers</title>
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
-    <link rel="stylesheet" href="TemplateData/stylegame.css">
+    <link rel="shortcut icon" href="./TemplateData/favicon.ico">
+    <link rel="stylesheet" href="./TemplateData/stylegame.css">
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
@@ -95,8 +95,11 @@
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-        canvas.style.width = "1440px";
-        canvas.style.height = "3088px";
+        // canvas.style.width = "1440px";
+        // canvas.style.height = "3088px";
+
+        canvas.style.width = "360px";
+        canvas.style.height = "762px";
       }
 
       loadingBar.style.display = "block";
