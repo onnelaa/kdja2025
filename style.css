@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Fredoka", sans-serif;
+}
+
+body {
+  background-image: url("pics/taustapilt.svg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  background: #ffffff;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+header {
+  text-align: center;
+}
+
+.main-nav {
+  background: rgba(183, 95, 255, 0.2823529412);
+  border-radius: 0 0 50px 50px;
+}
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  padding: 1.5rem;
+}
+.main-nav a {
+  color: #333;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 17px;
+}
+.main-nav a:hover {
+  color: #fff;
+}
+
+.main-content {
+  padding: 2rem 0;
+}
+.main-content h1 {
+  font-size: 2.5rem;
+  color: #8232d5;
+  margin-bottom: 0.5rem;
+}
+.main-content > p:first-of-type {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+.main-content .text-content p {
+  margin-bottom: 0.5rem;
+}
+
+button, .main-content a[href="#"] {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.7rem 1.5rem;
+  background: rgba(183, 95, 255, 0.2823529412);
+  color: #333;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+}
+button:hover, .main-content a[href="#"]:hover {
+  background: rgba(136, 0, 248, 0.2823529412);
+}
+
+.contact-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  margin-top: 2rem;
+}
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f5f5;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+.contact-form form input[type=text] {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+.contact-form form input[type=submit] {
+  background-color: rgba(183, 95, 255, 0.2823529412);
+  color: #333;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.contact-form form input[type=submit]:hover {
+  background: rgba(136, 0, 248, 0.2823529412);
+}
+
+footer {
+  margin-top: 3rem;
+  padding: 1.5rem;
+  border-radius: 50px 50px 0 0;
+  color: #333;
+}
+footer .footer-nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+}
+footer .footer-nav ul a {
+  color: #333;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 17px;
+}
+footer .footer-nav ul a:hover {
+  color: #fff;
+}/*# sourceMappingURL=style.css.map */
