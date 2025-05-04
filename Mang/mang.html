@@ -6,8 +6,23 @@
     <title>Unity WebGL Player | Fortune Diggers</title>
     <link rel="shortcut icon" href="./TemplateData/favicon.ico">
     <link rel="stylesheet" href="./TemplateData/stylegame.css">
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;700&display=swap" rel="stylesheet">
   </head>
   <body>
+
+    <header class="left-header">
+      <img src="../pics/logo.webp" alt="Veebilehe logo" width="150">
+    </header>
+
+    <nav class="left-nav">
+      <ul>
+          <li><a href="../index.html">AVALEHT</a></li>
+          <li><a href="./Mang/mang.html" class="active">MÄNGI MÄNGU</a></li>
+          <li><a href="../support.html">TOETA MEID</a></li>
+      </ul>
+    </nav>
+
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas" width=1440 height=3088 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
@@ -95,11 +110,8 @@
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-        // canvas.style.width = "1440px";
-        // canvas.style.height = "3088px";
-
-        canvas.style.width = "360px";
-        canvas.style.height = "762px";
+        canvas.style.width = "340px";
+        canvas.style.height = "742px";
       }
 
       loadingBar.style.display = "block";
