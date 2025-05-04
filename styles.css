@@ -34,8 +34,11 @@ header {
 }
 
 .left-nav {
-  background: none;
+  background: rgba(183, 95, 255, 0.2823529412);
   padding: 1.5rem 0;
+  border-radius: 20px;
+  margin: 1rem;
+  box-shadow: 0 4px 15px rgb(128, 76, 76);
 }
 .left-nav ul {
   list-style: none;
@@ -53,6 +56,21 @@ header {
 .left-nav a:hover {
   color: #fefefe;
   transition: color 0.5s ease;
+}
+
+.sidebar {
+  background: #8232d5;
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 1.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 100;
 }
 
 .main-nav {

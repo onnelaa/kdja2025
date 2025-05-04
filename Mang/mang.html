@@ -11,17 +11,19 @@
   </head>
   <body>
 
-    <header class="left-header">
-      <img src="../pics/logo.webp" alt="Veebilehe logo" width="150">
-    </header>
-
-    <nav class="left-nav">
-      <ul>
-          <li><a href="../index.html">AVALEHT</a></li>
-          <!-- <li><a href="./Mang/mang.html" class="active">MÄNGI MÄNGU</a></li> !-->
-          <li><a href="../support.html">TOETA MEID</a></li>
-      </ul>
-    </nav>
+    <div class="sidebar">
+      <button class="close-sidebar">X</button>
+      <header class="left-header">
+        <img src="../pics/logo.webp" alt="Veebilehe logo" width="150">
+      </header>
+    
+      <nav class="left-nav">
+        <ul>
+            <li><a href="../index.html">AVALEHT</a></li>
+            <li><a href="../support.html">TOETA MEID</a></li>
+        </ul>
+      </nav>
+    </div>
 
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas" width=1440 height=3088 tabindex="-1"></canvas>
@@ -38,7 +40,16 @@
         <div id="unity-build-title">Fortune Diggers</div>
       </div>
     </div>
+
     <script>
+      document.querySelector(".close-sidebar").addEventListener("click", function () {
+        document.querySelector(".sidebar").style.display = "none";
+      });
+    </script>
+    
+
+    <script>
+      
 
       var container = document.querySelector("#unity-container");
       var canvas = document.querySelector("#unity-canvas");
