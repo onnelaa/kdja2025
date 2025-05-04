@@ -46,7 +46,7 @@ body
   margin: 0 auto
   padding-left: 3rem
   padding-right: 3rem
-  border-radius: 130px 130px 130px 130px
+  border-radius: 130px
 
 header
   text-align: center
@@ -59,7 +59,6 @@ header
 
 .left-nav
   background: none
-  border-radius: 100px 100px 0 0
   padding: 1.5rem 0
 
   ul 
@@ -77,6 +76,7 @@ header
 
     &:hover 
       color: #fefefe
+      transition: color 0.5s ease
 
 
 .main-nav
@@ -99,8 +99,9 @@ header
     font-size: 20px
     &:hover
       color: $accent
+      transition: color 0.5s ease
 
-//Näitab mis lehe peal oled  
+//Näitab, mis lehe peal oled navigatsioonis
 a.active 
   color: $accent
 
@@ -149,7 +150,7 @@ button, .main-content a[href="#"]
       border-radius: 10px
       &:focus
         background: lighten($button, 20%)
-
+        outline: none
 
     input[type="radio"]
       margin-bottom: 0.5rem
@@ -168,21 +169,26 @@ button, .main-content a[href="#"]
 
 
 footer
-  //background: $primary
-  margin-top: 3rem
+  margin-bottom: 1rem
   padding: 1.5rem
-  border-radius: 50px 50px 0 0
-  color: $text-dark
   .footer-nav
     ul
-      display: flex
-      justify-content: space-around
       list-style: none
-      padding: 0
-      a
-        color: $text-dark
-        font-weight: bold
-        text-decoration: none
-        font-size: 17px
-        &:hover
-          color: $text-light
+      display: flex
+      justify-content: center
+      gap: 5rem
+    .social-icon // Kitsendab vahe ainult ikoonide vahel
+      margin-left: -4rem
+    a
+      color: $text-dark
+      font-weight: bold
+      text-decoration: none
+      font-size: 17px
+      &:hover
+        color: $text-light
+        transition: color 0.5s ease
+
+    img // Ikoonide valgeks tegemine
+      transition: filter 0.5s ease
+      &:hover
+        filter: brightness(0) invert(1) // teeb pildi valgeks
