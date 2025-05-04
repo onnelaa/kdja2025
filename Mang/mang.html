@@ -12,7 +12,7 @@
   <body>
 
     <div class="sidebar">
-      <button class="close-sidebar">X</button>
+      <button class="toggle-sidebar" id="toggleSidebarBtn">&#8592;</button>
       <header class="left-header">
         <img src="../pics/logo.webp" alt="Veebilehe logo" width="150">
       </header>
@@ -42,10 +42,15 @@
     </div>
 
     <script>
-      document.querySelector(".close-sidebar").addEventListener("click", function () {
-        document.querySelector(".sidebar").style.display = "none";
+      const sidebar = document.querySelector(".sidebar");
+      const toggleBtn = document.getElementById("toggleSidebarBtn");
+    
+      toggleBtn.addEventListener("click", () => {
+        sidebar.classList.toggle("closed");
+        toggleBtn.innerHTML = sidebar.classList.contains("closed") ? "&#8594;" : "&#8592;";
       });
     </script>
+    
     
 
     <script>

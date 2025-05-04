@@ -73,6 +73,26 @@ header {
   z-index: 100;
 }
 
+.sidebar.closed {
+  transform: translateX(-80%);
+  background: none;
+  box-shadow: none;
+}
+
+.toggle-sidebar {
+  background: none;
+  border: none;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  position: absolute;
+  left: 90%;
+  top: -1rem;
+  transform: translateX(-50%);
+  z-index: 1001;
+}
+
 .main-nav {
   background: rgba(183, 95, 255, 0.2823529412);
   margin-left: -3rem;
