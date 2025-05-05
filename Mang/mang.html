@@ -24,23 +24,23 @@
         </ul>
       </nav>
     </div>
-
-    <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=1440 height=3088 tabindex="-1"></canvas>
-      <div id="unity-loading-bar">
-        <div id="unity-logo"></div>
-        <div id="unity-progress-bar-empty">
-          <div id="unity-progress-bar-full"></div>
+    <main>
+      <div id="unity-container" class="unity-desktop">
+        <canvas id="unity-canvas" width=1440 height=3088 tabindex="-1"></canvas>
+        <div id="unity-loading-bar">
+          <div id="unity-logo"></div>
+          <div id="unity-progress-bar-empty">
+            <div id="unity-progress-bar-full"></div>
+          </div>
+        </div>
+        <div id="unity-warning"> </div>
+        <div id="unity-footer">
+          <div id="unity-webgl-logo"></div>
+          <div id="unity-fullscreen-button"></div>
+          <div id="unity-build-title">Fortune Diggers</div>
         </div>
       </div>
-      <div id="unity-warning"> </div>
-      <div id="unity-footer">
-        <div id="unity-webgl-logo"></div>
-        <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">Fortune Diggers</div>
-      </div>
-    </div>
-
+    </main>
     <script>
       const sidebar = document.querySelector(".sidebar");
       const toggleBtn = document.getElementById("toggleSidebarBtn");
