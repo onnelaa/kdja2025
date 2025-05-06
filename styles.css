@@ -155,6 +155,7 @@ button, .main-content a[href="#"] {
   cursor: pointer;
   font-weight: bold;
   text-align: center;
+  font-size: 16px;
 }
 button:hover, .main-content a[href="#"]:hover {
   background: rgba(136, 0, 248, 0.2823529412);
