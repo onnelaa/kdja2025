@@ -57,7 +57,6 @@ header
   padding: 1rem
 
 .left-nav //Mängu osa
-  //background: #E6D0FF
   padding: 1.5rem 0
   border-radius: 20px
   margin: 1rem
@@ -228,6 +227,27 @@ footer
       &:hover
         filter: brightness(0) invert(1) // teeb pildi valgeks
 
+.header-container
+  display: flex
+  align-items: center
+  justify-content: center
+  position: relative
+  padding: 1rem 0
+
+.hamburger 
+  display: none // Vaikimisi peidetud
+  background: none
+  border: none
+  font-size: 2rem
+  color: $text-dark
+  cursor: pointer
+  position: absolute
+  left: 1rem
+  transform: translateX(-40%) translateY(-120%)
+  z-index: 1001
+  
+  &:focus 
+    outline: none
   
 // Mobiilivaade (abi deepseekilt)
 @media (max-width: 768px)
@@ -242,33 +262,41 @@ footer
     height: auto
 
   .main-nav
-    padding: 0.5rem 0
+    position: fixed
+    top: 0
+    left: -100%
+    width: 80%
+    height: 100vh
+    background: #E6D0FF
+    z-index: 1000
+    transition: left 0.3s ease
+    //padding-top: 5rem
+    padding: 5rem 
     margin-left: -1rem
     margin-right: -1rem
-    border-radius: 30px 30px 0 0 // Väiksem raadius
-    
+    border-radius: 0px 30px 30px 0px
     ul
       flex-direction: column
-      gap: 0.2rem
-      padding: 0.2rem
+      gap: 2rem
+      padding: 1rem
       align-items: center // Joondab navi keskele
     
     a
       font-size: 1rem // Väiksem font
       padding: 0.5rem 0 // Rohkem paddingut, et saaks paremini hallata
+      display: block
 
   .main-content
     padding: 1rem 0
+    text-align: center
     
     h1
       font-size: 1.8rem 
-      text-align: left
       margin-bottom: 1rem
     
     h2
       font-size: 1.2rem
       margin-top: 1.5rem
-    
     > p:first-of-type
       font-size: 1rem
       margin-bottom: 1.5rem
@@ -298,6 +326,7 @@ footer
   .contact-form
     min-height: auto
     margin-top: 0.5rem
+    text-align: left
     
     form
       padding: 1.5rem
@@ -328,6 +357,7 @@ footer
   .sidebar
     width: 50% 
     padding: 1rem
+    border-radius: 0px 30px 30px 0px
     
     &.open
       transform: translateX(0)
@@ -336,13 +366,14 @@ footer
       font-size: 1rem
       padding: 0.5rem 0
 
+
   .toggle-sidebar
     font-size: 1.5rem
     top: 0.5rem
     left: auto
     right: 1rem
-    color: white // Parem nähtavus
-    background: rgba(0,0,0,0.3) // Nähtav taust
+    color: black // Parem nähtavus
+    background: rgba(130, 29, 146, 0.3) // Nähtav taust
     border-radius: 50%
     width: 2.5rem
     height: 2.5rem
@@ -358,3 +389,16 @@ footer
     display: flex
     align-items: center
     justify-content: center
+  
+  .hamburger 
+    display: block
+
+  .main-nav.mobile-hidden 
+    left: -100%
+  
+  .main-nav.mobile-visible 
+    left: 0
+  
+  // Kui menüü on avatud, keela kerimine
+  body.menu-open 
+    overflow: hidden

@@ -232,6 +232,30 @@ footer .footer-nav img:hover {
   filter: brightness(0) invert(1);
 }
 
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 1rem 0;
+}
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #333;
+  cursor: pointer;
+  position: absolute;
+  left: 1rem;
+  transform: translateX(-40%) translateY(-120%);
+  z-index: 1001;
+}
+.hamburger:focus {
+  outline: none;
+}
+
 @media (max-width: 768px) {
   .container {
     padding-left: 1rem;
@@ -244,27 +268,36 @@ footer .footer-nav img:hover {
     height: auto;
   }
   .main-nav {
-    padding: 0.5rem 0;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 80%;
+    height: 100vh;
+    background: #E6D0FF;
+    z-index: 1000;
+    transition: left 0.3s ease;
+    padding: 5rem;
     margin-left: -1rem;
     margin-right: -1rem;
-    border-radius: 30px 30px 0 0;
+    border-radius: 0px 30px 30px 0px;
   }
   .main-nav ul {
     flex-direction: column;
-    gap: 0.2rem;
-    padding: 0.2rem;
+    gap: 2rem;
+    padding: 1rem;
     align-items: center;
   }
   .main-nav a {
     font-size: 1rem;
     padding: 0.5rem 0;
+    display: block;
   }
   .main-content {
     padding: 1rem 0;
+    text-align: center;
   }
   .main-content h1 {
     font-size: 1.8rem;
-    text-align: left;
     margin-bottom: 1rem;
   }
   .main-content h2 {
@@ -300,6 +333,7 @@ footer .footer-nav img:hover {
   .contact-form {
     min-height: auto;
     margin-top: 0.5rem;
+    text-align: left;
   }
   .contact-form form {
     padding: 1.5rem;
@@ -329,6 +363,7 @@ footer .footer-nav img:hover {
   .sidebar {
     width: 50%;
     padding: 1rem;
+    border-radius: 0px 30px 30px 0px;
   }
   .sidebar.open {
     transform: translateX(0);
@@ -342,8 +377,8 @@ footer .footer-nav img:hover {
     top: 0.5rem;
     left: auto;
     right: 1rem;
-    color: white;
-    background: rgba(0, 0, 0, 0.3);
+    color: black;
+    background: rgba(130, 29, 146, 0.3);
     border-radius: 50%;
     width: 2.5rem;
     height: 2.5rem;
@@ -358,5 +393,17 @@ footer .footer-nav img:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .hamburger {
+    display: block;
+  }
+  .main-nav.mobile-hidden {
+    left: -100%;
+  }
+  .main-nav.mobile-visible {
+    left: 0;
+  }
+  body.menu-open {
+    overflow: hidden;
   }
 }/*# sourceMappingURL=styles.css.map */

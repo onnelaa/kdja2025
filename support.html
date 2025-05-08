@@ -6,15 +6,22 @@
     <title>Kasutajaliideste disain ja arendus 2025</title>
     <link rel="icon" type="image/svg+xml" href="pics/favicon.svg">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 <body>
     <header>
-        <img src="pics/logo.webp" alt="Veebilehe logo" width="200">
+        <div class="header-container">
+            <button class="hamburger" aria-label="Menüü">
+                <i class="fas fa-bars"></i>
+            </button>
+            <img src="pics/logo.webp" alt="Veebilehe logo" width="200">
+        </div>
     </header>
 
     <div class="container">
-        <nav class="main-nav">
+        <nav class="main-nav mobile-hidden">
             <ul>
                 <li><a href="index.html">AVALEHT</a></li>
                 <li><a href="./Mang/mang.html">MÄNGI MÄNGU</a></li>
@@ -69,6 +76,32 @@
             </ul>
         </nav>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.querySelector('.hamburger');
+            const mainNav = document.querySelector('.main-nav');
+            const body = document.body;
+            
+            hamburger.addEventListener('click', function() {
+                mainNav.classList.toggle('mobile-visible');
+                mainNav.classList.toggle('mobile-hidden');
+                body.classList.toggle('menu-open');
+            });
+            
+            // Sulge menüü, kui vajutada lingile
+            const navLinks = document.querySelectorAll('.main-nav a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    if (window.innerWidth <= 768) {
+                        mainNav.classList.remove('mobile-visible');
+                        mainNav.classList.add('mobile-hidden');
+                        body.classList.remove('menu-open');
+                    }
+                });
+            });
+        });
+    </script>
 
 </body>
 </html>
