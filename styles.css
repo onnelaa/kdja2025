@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
   margin: 0;
@@ -198,6 +199,7 @@ button:hover, .main-content a[href="#"]:hover {
   border-radius: 10px;
   cursor: pointer;
   font-weight: bold;
+  font-size: 16px;
 }
 .contact-form form input[type=submit]:hover {
   background: rgba(136, 0, 248, 0.2823529412);
@@ -219,8 +221,8 @@ footer .footer-nav .social-icon {
 footer .footer-nav a {
   color: #333;
   font-weight: bold;
-  text-decoration: none;
-  font-size: 17px;
+  text-decoration: underline;
+  font-size: 18px;
 }
 footer .footer-nav a:hover {
   color: #fff;
@@ -233,131 +235,117 @@ footer .footer-nav img:hover {
   filter: brightness(0) invert(1);
 }
 
-@media (max-width: 768px) {
-  .container {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    border-radius: 30px;
-    margin: 0.5rem;
-  }
-  header img {
-    width: 120px;
-    height: auto;
-  }
-  .main-nav {
-    padding: 0.5rem 0;
-    margin-left: -1rem;
-    margin-right: -1rem;
-    border-radius: 30px 30px 0 0;
-  }
-  .main-nav ul {
-    flex-direction: column;
-    gap: 0.2rem;
-    padding: 0.2rem;
-    align-items: center;
-  }
-  .main-nav a {
-    font-size: 1rem;
-    padding: 0.5rem 0;
-  }
-  .main-content {
-    padding: 1rem 0;
-  }
-  .main-content h1 {
-    font-size: 1.8rem;
-    text-align: left;
-    margin-bottom: 1rem;
-  }
-  .main-content h2 {
-    font-size: 1.2rem;
-    margin-top: 1.5rem;
-  }
-  .main-content > p:first-of-type {
-    font-size: 1rem;
-    margin-bottom: 1.5rem;
-  }
-  .main-content .text-content p {
-    font-size: 0.9rem;
-    line-height: 1.5;
-    margin-bottom: 1rem;
-  }
-  .left-nav {
-    margin: 0.5rem;
-    padding: 1rem 0;
-  }
-  .left-nav ul {
-    padding: 1rem;
-    gap: 0.8rem;
-  }
-  .left-nav a {
-    font-size: 1rem;
-  }
-  button, .main-content a[href="#"] {
-    padding: 0.6rem 1.2rem;
-    font-size: 0.9rem;
-    width: 100%;
-    margin-top: 0.5rem;
-  }
-  .contact-form {
-    min-height: auto;
-    margin-top: 0.5rem;
-  }
-  .contact-form form {
-    padding: 1.5rem;
-    max-width: 100%;
-    margin: 0 0.5rem;
-  }
-  .contact-form form input[type=text],
-  .contact-form form input[type=submit] {
-    padding: 0.6rem;
-  }
-  footer {
-    padding: 1rem 0;
-  }
-  footer .footer-nav ul {
-    flex-direction: row;
-    gap: 0.5rem;
-    align-items: center;
-  }
-  footer .footer-nav .social-icon {
-    margin-left: 0;
-    gap: 1rem;
-  }
-  footer .footer-nav a {
-    font-size: 0.9rem;
-    padding: 0.3rem 0;
-  }
-  .sidebar {
-    width: 80%;
-    padding: 1rem;
-  }
-  .sidebar.open {
-    transform: translateX(0);
-  }
-  .sidebar a {
-    font-size: 1rem;
-    padding: 0.5rem 0;
-  }
-  .toggle-sidebar {
-    font-size: 1.5rem;
-    top: 0.5rem;
-    left: auto;
-    right: 1rem;
-    color: white;
-    background: rgba(0, 0, 0, 0.3);
-    border-radius: 50%;
-    width: 2.5rem;
-    height: 2.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transform: none;
-  }
-  a, button {
-    min-height: 44px;
-    min-width: 44px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-}/*# sourceMappingURL=styles.css.map */
+/*@media (max-width: 768px)
+ * .container
+ *  padding-left: 1rem
+ *  padding-right: 1rem
+ *  border-radius: 30px
+ *  margin: 0.5rem
+ *
+ * header img
+ *  width: 120px
+ *  height: auto
+ *
+ * .main-nav
+ *  padding: 0.5rem 0
+ *  margin-left: -1rem
+ *  margin-right: -1rem
+ *  border-radius: 30px 30px 0 0 // Väiksem raadius
+ *  ul
+ *    flex-direction: column
+ *    gap: 0.2rem
+ *    padding: 0.2rem
+ *    align-items: center // Joondab navi keskele
+ *  a
+ *    font-size: 1rem // Väiksem font
+ *    padding: 0.5rem 0 // Rohkem paddingut, et saaks paremini hallata
+ *
+ * .main-content
+ *  padding: 1rem 0
+ *  h1
+ *    font-size: 1.8rem 
+ *    text-align: left
+ *    margin-bottom: 1rem
+ *  h2
+ *    font-size: 1.2rem
+ *    margin-top: 1.5rem
+ *  > p:first-of-type
+ *    font-size: 1rem
+ *    margin-bottom: 1.5rem
+ *  .text-content p
+ *    font-size: 0.9rem
+ *    line-height: 1.5 // Parem lugemiseks
+ *    margin-bottom: 1rem // Rohkem vahet
+ *
+ * .left-nav
+ *  margin: 0.5rem
+ *  padding: 1rem 0
+ *  ul
+ *    padding: 1rem
+ *    gap: 0.8rem
+ *  a
+ *    font-size: 1rem
+ *
+ * button, .main-content a[href="#"]
+ *  padding: 0.6rem 1.2rem
+ *  font-size: 0.9rem
+ *  width: 100% // Nupp on kogu laiuses, näeb parem välja
+ *  margin-top: 0.5rem
+ *
+ * .contact-form
+ *  min-height: auto
+ *  margin-top: 0.5rem
+ *  form
+ *    padding: 1.5rem
+ *    max-width: 100% 
+ *    margin: 0 0.5rem 
+ *    input[type="text"],
+ *    input[type="submit"]
+ *      padding: 0.6rem // Veidi suurem, et saaks paremini vajutada
+ *
+ * footer
+ *  padding: 1rem 0
+ *  .footer-nav
+ *    ul
+ *      flex-direction: row 
+ *      gap: 0.5rem
+ *      align-items: center
+ *    .social-icon
+ *      margin-left: 0 
+ *      gap: 1rem 
+ *    a
+ *      font-size: 0.9rem
+ *      padding: 0.3rem 0 
+ *
+ * // Sidebar parendused
+ * .sidebar
+ *  width: 80% 
+ *  padding: 1rem
+ *  &.open
+ *    transform: translateX(0)
+ *  a
+ *    font-size: 1rem
+ *    padding: 0.5rem 0
+ *
+ * .toggle-sidebar
+ *  font-size: 1.5rem
+ *  top: 0.5rem
+ *  left: auto
+ *  right: 1rem
+ *  color: white // Parem nähtavus
+ *  background: rgba(0,0,0,0.3) // Nähtav taust
+ *  border-radius: 50%
+ *  width: 2.5rem
+ *  height: 2.5rem
+ *  display: flex
+ *  align-items: center
+ *  justify-content: center
+ *  transform: none
+ *
+ * // Parendab ''touch targets'''
+ * a, button
+ *  min-height: 44px
+ *  min-width: 44px
+ *  display: flex
+ *  align-items: center
+ *  justify-content: center*//*# sourceMappingURL=styles.css.map */
