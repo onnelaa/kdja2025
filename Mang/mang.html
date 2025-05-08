@@ -5,13 +5,13 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | Fortune Diggers</title>
     <link rel="shortcut icon" href="./TemplateData/favicon.ico">
-    <!--<link rel="stylesheet" href="./TemplateData/stylegame.css"> -->
+    <link rel="stylesheet" href="./TemplateData/stylegame.css">
     <link rel="stylesheet" href="../styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;700&display=swap" rel="stylesheet">
   </head>
   <body>
 
-    <!--<nav class="sidebar">
+    <nav class="sidebar">
       <button class="toggle-sidebar" id="toggleSidebarBtn">&#8592;</button>
       <header class="left-header">
         <img src="../pics/logo.webp" alt="Veebilehe logo" width="150">
@@ -23,56 +23,8 @@
             <li><a href="../support.html">TOETA MEID</a></li>
         </ul>
       </div>
-    </nav><!-->
-
-    <!-- Ütlustatud navigatsioon peale kaitsmist -->
-    <header>
-      <img src="../pics/logo.webp" alt="Veebilehe logo" width="200">
-    </header>
-
-    <div class="container">
-      <nav class="main-nav">
-          <ul>
-              <li><a href="../index.html">AVALEHT</a></li>
-              <li><a href="./Mang/mang.html" class="active">MÄNGI MÄNGU</a></li>
-              <li><a href="../support.html">TOETA MEID</a></li>
-          </ul>
-      </nav>
-      <main>
-          <section class="main-content">
-              <div id="unity-container" class="unity-desktop">
-                <canvas id="unity-canvas" width=1440 height=3088 tabindex="-1"></canvas>
-                <div id="unity-loading-bar">
-                  <div id="unity-logo"></div>
-                  <div id="unity-progress-bar-empty">
-                    <div id="unity-progress-bar-full"></div>
-                  </div>
-                </div>
-                <div id="unity-warning"> </div>
-                <div id="unity-footer">
-                  <div id="unity-webgl-logo"></div>
-                  <div id="unity-fullscreen-button"></div>
-                  <!--<div id="unity-build-title">Fortune Diggers</div> -->
-                </div>
-              </div>
-          </section>
-      </main>
-  </div>
-
-  <footer>
-    <nav class="footer-nav">
-        <ul>
-            <li><a href="#">MEIST</a></li>
-            <li><a href="support.html">TOETA</a></li><br>
-            <li class="social-icon"><img src="../pics/facebook.png" alt="Facebook" width="25"></li>
-            <li class="social-icon"><img src="../pics/instagram.png" alt="Instagram" width="25"></li>
-            <li class="social-icon"><img src="../pics/linkedin.png" alt="Linkedin" width="25"></li>
-            <li class="social-icon"><img src="../pics/tik-tok.png" alt="TikTok" width="25"></li>
-        </ul>
     </nav>
-  </footer>
-
-      <!-- <div id="unity-container" class="unity-desktop">
+    <div id="unity-container" class="unity-desktop">
         <canvas id="unity-canvas" width=1440 height=3088 tabindex="-1"></canvas>
         <div id="unity-loading-bar">
           <div id="unity-logo"></div>
@@ -86,7 +38,8 @@
           <div id="unity-fullscreen-button"></div>
           <div id="unity-build-title">Fortune Diggers</div>
         </div>
-      </div> !-->
+      </div>
+
     <script>
       const sidebar = document.querySelector(".sidebar");
       const toggleBtn = document.getElementById("toggleSidebarBtn");
