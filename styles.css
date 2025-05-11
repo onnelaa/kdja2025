@@ -11,6 +11,7 @@ body {
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
+  background-color: #ae5bd7;
   color: #333;
   line-height: 1.6;
 }
@@ -48,7 +49,7 @@ header {
 .left-nav a {
   color: #333;
   font-weight: bold;
-  text-decoration: underline;
+  text-decoration: none;
   font-size: 20px;
 }
 .left-nav a:hover {
@@ -108,7 +109,7 @@ header {
 .main-nav a {
   color: #333;
   font-weight: bold;
-  text-decoration: underline;
+  text-decoration: none;
   font-size: 20px;
 }
 .main-nav a:hover {
@@ -129,14 +130,14 @@ a.active {
   margin-bottom: 0.5rem;
 }
 .main-content h2 {
-  text-align: center;
-  font-size: 1.3rem;
-  margin-top: 2rem;
-}
-.main-content > p:first-of-type {
   font-size: 1.3rem;
   font-weight: bold;
   margin-bottom: 2rem;
+}
+.main-content h3 {
+  text-align: center;
+  font-size: 1.3rem;
+  margin-top: 2rem;
 }
 .main-content .text-content p {
   margin-bottom: 0.2rem;
@@ -186,7 +187,7 @@ button:hover, .main-content a[href="#"]:hover {
   outline: none;
 }
 .contact-form form input[type=radio] {
-  margin-bottom: 0.5rem;
+  margin-left: 0.4rem;
 }
 .contact-form form input[type=submit] {
   background-color: rgba(183, 95, 255, 0.2823529412);
@@ -204,13 +205,20 @@ button:hover, .main-content a[href="#"]:hover {
 
 footer {
   margin-bottom: 1rem;
-  padding: 1.5rem;
+}
+footer .footer-nav {
+  background: rgba(183, 95, 255, 0.2823529412);
+  margin-left: -3rem;
+  margin-right: -3rem;
+  border-radius: 0px 0px 100px 100px;
+  padding: 1.5rem 0;
 }
 footer .footer-nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
   gap: 5rem;
+  padding: 1.5rem;
 }
 footer .footer-nav .social-icon {
   margin-left: -4rem;
@@ -218,11 +226,11 @@ footer .footer-nav .social-icon {
 footer .footer-nav a {
   color: #333;
   font-weight: bold;
-  text-decoration: underline;
-  font-size: 18px;
+  text-decoration: none;
+  font-size: 20px;
 }
 footer .footer-nav a:hover {
-  color: #fff;
+  color: #8232d5;
   transition: color 0.5s ease;
 }
 footer .footer-nav img {
@@ -344,8 +352,8 @@ footer .footer-nav img:hover {
   .contact-form form input[type=submit] {
     padding: 0.6rem;
   }
-  footer {
-    padding: 1rem 0;
+  footer .footer-nav {
+    border-radius: 0px 0px 30px 30px;
   }
   footer .footer-nav ul {
     flex-direction: row;

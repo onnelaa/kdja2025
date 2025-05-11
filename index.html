@@ -20,7 +20,7 @@
     </header>
 
     <div class="container">
-        <nav class="main-nav mobile-hidden">
+        <nav class="main-nav mobile-hidden" aria-label="Peamine navigatsioon">
             <ul>
                 <li><a href="index.html" class="active">AVALEHT</a></li>
                 <li><a href="./Mang/mang.html">MÄNGI MÄNGU</a></li>
@@ -30,7 +30,7 @@
         <main>
             <section class="main-content">
                 <h1>FORTUNE DIGGERS</h1>
-                <p>Klikkides võiduka varanduseni!</p>
+                <h2>Klikkides võiduka varanduseni!</h2>
                 
                 <div class="text-content">
                     <p>Fortune Diggers on clicker/miner-mängu tüüp, kus põhimõte on lihtne – kliki kivi peale ja hakka kaevandama. Iga klikk annab kulda, mida saab poes kasutada igasuguste asjade ostmiseks.
@@ -41,36 +41,35 @@
                     <button onclick="window.location.href='../Mang/mang.html'">Mängi mängu</button>
                 </div>
                 
-                <h2>Võta meiega ühendust</h2>
+                <h3>Võta meiega ühendust</h3>
                 <div class="contact-form">
                     <form>
-                    <label for="name">Nimi</label>
-                    <input type="text" id="name" name="name" placeholder="Sinu nimi.."><br>
-                    <label for="email">Meiliaadress</label>
-                    <input type="text" id="email" name="email" placeholder="Sinu meiliaadress.."><br>
-                    <label for="phone">Telefoni number</label>
-                    <input type="text" id="phone" name="phone" placeholder="Sinu telefoni nr.."><br>
-                    <label for="message">Sõnum</label>
-                    <input type="text" id="message" name="message" placeholder="Sinu sõnum meile.."><br>
-                    <input type="submit" value="Saada">
+                        <label for="name">Nimi</label>
+                        <input type="text" id="name" name="name" placeholder="Sinu nimi.."><br>
+                        <label for="email">Meiliaadress</label>
+                        <input type="text" id="email" name="email" placeholder="Sinu meiliaadress.."><br>
+                        <label for="phone">Telefoni number</label>
+                        <input type="text" id="phone" name="phone" placeholder="Sinu telefoni nr.."><br>
+                        <label for="message">Sõnum</label>
+                        <input type="text" id="message" name="message" placeholder="Sinu sõnum meile.."><br>
+                        <input type="submit" value="Saada">
                     </form>
                 </div>
             </section>
         </main>
+        <footer>
+            <nav class="footer-nav" aria-label="Jaluse navigatsioon">
+                <ul>
+                    <li><a href="#">MEIST</a></li>
+                    <li><a href="support.html">TOETA</a></li><br>
+                    <li class="social-icon"><img src="pics/facebook.png" alt="Facebook" width="25"></li>
+                    <li class="social-icon"><img src="pics/instagram.png" alt="Instagram" width="25"></li>
+                    <li class="social-icon"><img src="pics/linkedin.png" alt="Linkedin" width="25"></li>
+                    <li class="social-icon"><img src="pics/tik-tok.png" alt="TikTok" width="25"></li>
+                </ul>
+            </nav>
+        </footer>
     </div>
-
-    <footer>
-        <nav class="footer-nav">
-            <ul>
-                <li><a href="#">MEIST</a></li>
-                <li><a href="support.html">TOETA</a></li><br>
-                <li class="social-icon"><img src="pics/facebook.png" alt="Facebook" width="25"></li>
-                <li class="social-icon"><img src="pics/instagram.png" alt="Instagram" width="25"></li>
-                <li class="social-icon"><img src="pics/linkedin.png" alt="Linkedin" width="25"></li>
-                <li class="social-icon"><img src="pics/tik-tok.png" alt="TikTok" width="25"></li>
-            </ul>
-        </nav>
-    </footer>
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {

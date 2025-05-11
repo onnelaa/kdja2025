@@ -21,7 +21,7 @@
     </header>
 
     <div class="container">
-        <nav class="main-nav mobile-hidden">
+        <nav class="main-nav mobile-hidden" aria-label="Peamine navigatsioon">
             <ul>
                 <li><a href="index.html">AVALEHT</a></li>
                 <li><a href="./Mang/mang.html">MÄNGI MÄNGU</a></li>
@@ -30,42 +30,44 @@
         </nav>
         <main>
             <section class="main-content">
-                <p>Kuidas meid toetada?</p>
+                <h1>FORTUNE DIGGERS</h1>
+                <h2>Kuidas meid toetada?</h2>
                 <div class="text-content">
                     <p>Selle mängu ja lehe taga oleme meie – Õnnela ja Anna. Tegime selle kõik ise, nii kooli jaoks kui ka oma vabast ajast. Kui sulle meeldib Fortune Diggers ja tahad aidata meil mängu paremaks teha (või lihtsalt meid toetada), siis oleksime super tänulikud!                </p>
                 </div>
 
-                <h2>Toeta meid</h2>
+                <h3>Toeta meid</h3>
                 <div class="contact-form">
                     <form>
-                    <label for="name">Nimi</label>
-                    <input type="text" id="name" name="name" placeholder="Sinu nimi.."><br>
-                    <label for="email">Meiliaadress</label>
-                    <input type="text" id="email" name="email" placeholder="Sinu meiliaadress.."><br>
-                    <label for="message">Sõnum</label>
-                    <input type="text" id="email" name="email" placeholder="Sinu sõnum meile.."><br>
-                    <p>Vali summa</p>
-                    <label class="donation-option">
-                        <input type="radio" name="amount" value="5">
-                        5€
-                    </label>
-                    <label class="donation-option">
-                        <input type="radio" name="amount" value="10">
-                        10€
-                    </label>            
-                    <label class="donation-option">
-                        <input type="radio" name="amount" value="25">
-                        25€
-                    </label><br>
-                    <input type="submit" value="Saada">
+                        <label for="name">Nimi</label>
+                        <input type="text" id="name" name="name" placeholder="Sinu nimi.."><br>
+                        <label for="email">Meiliaadress</label>
+                        <input type="text" id="email" name="email" placeholder="Sinu meiliaadress.."><br>
+                        <label for="message">Sõnum</label>
+                        <input type="text" id="message" name="message" placeholder="Sinu sõnum meile.."><br>
+                        <fieldset>
+                            <legend>Vali summa</legend>
+                            <div>
+                                <input type="radio" id="five" name="amount" value="5" checked/>
+                                <label for="five">5€</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="ten" name="amount" value="10">
+                                <label for="ten">10€</label>
+                            </div>          
+                            <div>
+                                <input type="radio" id="twentyfive" name="amount" value="25">
+                                <label for="twentyfive">25€</label>
+                            </div>
+                        </fieldset>
+                        <br>
+                        <input type="submit" value="Saada">
                     </form>
                 </div>
             </section>
         </main>
-    </div>
-
-    <footer>
-        <nav class="footer-nav">
+        <footer>
+        <nav class="footer-nav" aria-label="Jaluse navigatsioon">
             <ul>
                 <li><a href="#">MEIST</a></li>
                 <li><a href="support.html">TOETA</a></li><br>
@@ -76,6 +78,7 @@
             </ul>
         </nav>
     </footer>
+    </div>
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
